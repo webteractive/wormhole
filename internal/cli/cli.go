@@ -15,8 +15,10 @@ import (
 	"github.com/webteractive/wormhole/internal/state"
 )
 
-// Version is the tool version reported by `wormhole --version`.
-const Version = "0.1.0"
+// Version is the tool version reported by `wormhole --version`. It defaults to
+// "dev" for source/`go install` builds and is overridden at release time via
+// -ldflags "-X .../internal/cli.Version=<tag>".
+var Version = "dev"
 
 // A custom --token must stay URL-safe and single-segment; it is the secret that
 // makes the public path unguessable.

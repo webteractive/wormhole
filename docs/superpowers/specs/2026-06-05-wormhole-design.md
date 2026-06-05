@@ -11,8 +11,9 @@ the public internet through an **ephemeral Cloudflare quick tunnel**
 AI-generated files — mostly images — can be fetched by a public URL for a short
 window and then torn down.
 
-The motivating consumer is an app (e.g. a Laravel MCP server) that ingests media by
-fetching a **public image URL** and deliberately has no upload endpoint. `wormhole`
+The motivating consumer is a service (e.g. an MCP server or a media-processing
+backend) that ingests media by fetching a **public image URL** and deliberately has
+no upload endpoint. `wormhole`
 bridges that gap: drop a file in a folder, get a public URL, hand it to the app, stop.
 
 The tool is explicitly **AI-friendly**: machine-readable output, a clean stdout/stderr
