@@ -1,0 +1,14 @@
+# Built binary
+/wormhole
+/dist/
+
+# Go
+*.test
+*.out
+coverage.*
+
+# OS / editor
+.DS_Store
+
+# Harness session state
+.claude/scheduled_tasks.lock
